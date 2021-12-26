@@ -731,6 +731,8 @@ header {
 .mailing-email::placeholder {
   margin-left: 16px;
   padding-left: 16px;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
