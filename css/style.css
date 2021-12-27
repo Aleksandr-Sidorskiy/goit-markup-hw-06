@@ -286,6 +286,9 @@ header {
   fill: #000;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover {
   fill: var(--fone-color);
@@ -301,7 +304,7 @@ header {
 }
 .modal-box {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 
   color: var(--text-primery);
@@ -723,6 +726,7 @@ header {
   width: 358px;
   height: 50px;
 
+  color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -742,9 +746,9 @@ header {
 }
 
 .mailing-button {
-  position: relative;
   width: 200px;
   height: 50px;
+  margin-left: 12px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -753,10 +757,14 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.mailing__btn-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
 .mailing-img {
-  position: absolute;
-  top: 30%;
-  right: 12px;
+  margin-left: 10px;
 }
 /* Портфолио */
 
